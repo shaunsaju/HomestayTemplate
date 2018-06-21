@@ -1,0 +1,287 @@
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+html{
+	padding:0;
+	margin: 0;
+}
+body{
+	font-family: 'Playfair Display', serif;
+	margin: 0;
+	padding:0;
+	background-color: rgb(236,234,224);
+	overflow-x: hidden;
+}
+
+@keyframes fade{
+	0%{
+		opacity: 0;
+		left: 100%;
+
+	}
+	10%{
+		opacity: 1;
+		left: 0%;
+	}
+	90%{
+		opacity: 1;
+		left: 0%;
+	}
+	100%{
+		opacity:0;
+		left: -100%;
+	}
+}
+
+
+header {
+	animation-name: fade;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction:alternate;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	width:100%;
+	
+	position: absolute;
+	top:0px;
+	margin: 0px;
+	padding: 0px;
+	border:none;
+	z-index: 50;
+}
+#head {
+	margin: 0px;
+	padding: 0px;
+	border:none;
+	position: relative;
+	top: 55%;
+	left: 60%;
+}
+h2{
+	font-family: 'Playfair Display', serif;
+	margin-right: 80px;
+	font-weight: 900;
+	font-size: 4em;
+	color: white;
+}
+#but {
+	font-family: 'Playfair Display', serif;
+	margin-left:60px;
+	font-weight: 700;
+	font-size: 1.5em;
+	padding: 0px;
+	border:none;
+	border-radius: 2%;
+	padding: 5px 50px 5px 50px;
+	background: rgba(236,234,224,0.7);
+	
+}
+#but:hover{
+	color: rgb(233,99,59);
+}
+nav{ 
+	padding: 0px;
+	border:none;
+	margin:0px;
+	position: fixed;
+	top: 0;
+	left: 0px;
+	width: 100%;
+	display: inline-block;
+	background-color: rgb(236,234,224);
+	opacity: 0.7;
+	box-shadow: 0px -7px 30px 0px #A7A6A6;
+	z-index: 52;
+}
+a{
+	position: relative;
+	left: 0%;
+	font-family: 'Inconsolata', monospace;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	border: 0.015px solid rgb(233,99,59);
+	margin:0px;
+	display: inline-block;
+
+}
+
+#form{
+	margin-top:0px;
+	padding: 0px;
+	border:none;
+	position: fixed;
+	right:30px;
+	top:-3px;
+}
+
+#searchForm{
+	position: fixed;
+	top:2px;
+	right:40px;
+	padding: 10px;
+	border:none;
+	margin:0px;
+	font-family: 'Inconsolata', monospace;
+	
+	border-radius: 10%;
+}
+#ab{
+	position: fixed;
+	right:30px;
+	top:2px;
+	z-index: 1100;
+	padding: 0px;
+	border:none;
+	border-radius: 100%;
+}
+
+
+a:hover{
+	color: rgb(233,99,59);
+	border-bottom-width: 2px;
+	border-bottom-color: rgb(233,99,59);
+}
+
+.hidden{
+	display: none;
+}
+
+
+
+#aa{
+	position: absolute;
+	top:55%;
+	margin: 25px;
+	
+	padding: 30px;
+	border:20px solid rgba(236,234,224,0.5);
+	background-clip: padding-box;
+	width:45%;
+	background-color:rgba(236,234,224,1);
+	box-shadow: 0px -7px 30px 0px #A7A6A6;
+	z-index: 51;
+
+}
+
+
+#aba{
+	position: relative;
+	
+	left:50%;
+	padding: 30px;
+	border:10px solid rgba(233,99,59,0.2);
+	margin: 25px;
+	width:45%;
+	background-color:rgba(236,234,224,1);
+	background-clip: padding-box;
+	box-shadow: 0px -7px 30px 0px #A7A6A6;
+
+}
+
+
+#abaa{
+	padding: 30px;
+	border:10px solid rgba(233,99,59,0.2);
+	margin: 25px;
+	width:75%;
+	background-color:rgba(236,234,224,1);
+
+}
+#ac{position: relative;
+	left:50%;
+	padding: 10px;
+	margin:25px;
+	width: 40%;
+	background-color:rgba(236,234,224,1);
+	border:10px solid rgba(233,99,59,0.2);
+	
+
+}
+#blank{
+	position: relative;
+	height:600px;
+	width:100%;
+}
+
+
+
+#map {	
+	
+	background-color:rgba(236,234,224,1);
+	border:10px solid rgba(233,99,59,0.2);
+        font-size: 3em;
+        overflow-x: auto;
+        overflow-y: auto;
+        height: 500px;
+       }
+
+#ad{
+
+
+        font-family: 'Inconsolata', monospace;
+	top:15%;
+	left:25%;
+	position: fixed;
+	padding: 10px;
+	margin:25px;
+	width: 50%;
+	border:20px solid rgba(236,234,224,0.5);
+	background-clip: padding-box;
+	z-index: 1250;
+	background-color:rgb(236,234,224);
+
+
+}
+h3{
+	display: inline-block;
+	font-size: 32px;
+}
+#ae{
+	display: inline-block;
+	margin-left: 85%;
+}
+.shower{
+	animation-direction:alternate;
+	display:block;
+	animation-name: faded;
+	animation-duration: 2s;
+	
+
+
+
+}
+@keyframes faded{
+	0%{
+		opacity: 0;
+
+
+	}
+	100%{
+		opacity:0;
+		left: -100%;
+	}
+}
+
+.no-click{
+	pointer-events: none;
+}
+
+#blu{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	background-color: rgba(233,99,59,0.6);
+	height: 1080px;
+	width:1980px;
+	z-index: 1000;
+}
+
+.show{
+	display: block;
+}
